@@ -1,1 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ebube Chika — Backend Engineer portfolio." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <title>Ebube Chika — Backend Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
 
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Home">EC<span>.</span></a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> Available for backend opportunities</p>
+        <h1>I build backend systems that stay reliable when things get busy.</h1>
+        <p class="hero-subtitle">
+          I’m <strong>Ebube Chika</strong>, a backend engineer focused on scalable APIs, payments,
+          multi-tenant systems, queues, data workflows, and the infrastructure behind modern web products.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">View selected work</a>
+          <a class="button button-ghost" href="#contact">Get in touch ↗</a>
+        </div>
+      </div>
+
+      <div class="hero-card reveal delay-1" aria-label="Profile summary">
+        <div class="code-bar">
+          <span></span><span></span><span></span>
+          <p>profile.json</p>
+        </div>
+        <pre><code>{
+  <span class="token-key">"role"</span>: <span class="token-string">"Backend Engineer"</span>,
+  <span class="token-key">"experience"</span>: <span class="token-string">"7+ years"</span>,
+  <span class="token-key">"stack"</span>: [
+    <span class="token-string">"Node.js"</span>, <span class="token-string">"NestJS"</span>,
+    <span class="token-string">"PostgreSQL"</span>, <span class="token-string">"Redis"</span>,
+    <span class="token-string">"AWS"</span>
+  ],
+  <span class="token-key">"focus"</span>: <span class="token-string">"Reliable systems"</span>
+}</code></pre>
+      </div>
+
+      <a href="#work" class="scroll-indicator" aria-label="Scroll to work">
+        <span>SCROLL</span><i></i>
+      </a>
+    </section>
+
+    <section id="work" class="section work-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Selected work</p>
+        <h2>Products and systems I’ve worked on.</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card project-featured reveal">
+          <div class="project-topline">
+            <span class="project-index">01</span>
+            <span class="project-type">Hospitality · SaaS</span>
+          </div>
+          <div>
+            <h3>Orbitverse</h3>
+            <p>
+              A multi-tenant hotel operations platform covering bookings, rooms, guest-facing hotel websites,
+              payments, reporting, staff workflows, and operational action items.
+            </p>
+          </div>
+          <ul class="tags" aria-label="Technologies">
+            <li>NestJS</li><li>PostgreSQL</li><li>Redis</li><li>Paystack</li><li>AWS S3</li>
+          </ul>
+          <div class="project-arrow">↗</div>
+        </article>
+
+        <article class="project-card reveal delay-1">
+          <div class="project-topline">
+            <span class="project-index">02</span>
+            <span class="project-type">Survey · SaaS</span>
+          </div>
+          <div>
+            <h3>SurveyBuddy</h3>
+            <p>
+              A visual survey builder with node-based flows, access controls, publishing validation,
+              analytics, themes, and multiple response experiences.
+            </p>
+          </div>
+          <ul class="tags" aria-label="Technologies">
+            <li>Next.js</li><li>NestJS</li><li>React Flow</li><li>Redis</li><li>Clerk</li>
+          </ul>
+          <div class="project-arrow">↗</div>
+        </article>
+
+        <article class="project-card reveal delay-2">
+          <div class="project-topline">
+            <span class="project-index">03</span>
+            <span class="project-type">Fintech · Infrastructure</span>
+          </div>
+          <div>
+            <h3>Hydrogen</h3>
+            <p>
+              Backend and platform work across fintech products, API proxying, permissions,
+              deployment environments, payment-adjacent workflows, and production debugging.
+            </p>
+          </div>
+          <ul class="tags" aria-label="Technologies">
+            <li>Node.js</li><li>Next.js</li><li>Azure</li><li>TypeScript</li><li>APIs</li>
+          </ul>
+          <div class="project-arrow">↗</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">About</p>
+        <h2>I care about what happens after “it works.”</h2>
+      </div>
+
+      <div class="about-grid">
+        <p class="about-copy reveal">
+          My work sits mostly behind the interface: APIs, data models, background jobs, payments,
+          permissions, caching, webhooks, event-driven workflows, and the boring-but-important details
+          that keep software dependable in production.
+        </p>
+
+        <div class="skill-panels reveal delay-1">
+          <div class="skill-panel">
+            <span>01</span>
+            <div><h3>Backend</h3><p>Node.js, NestJS, TypeScript, REST APIs, WebSockets</p></div>
+          </div>
+          <div class="skill-panel">
+            <span>02</span>
+            <div><h3>Data & async</h3><p>PostgreSQL, Redis, Bull queues, events, webhooks</p></div>
+          </div>
+          <div class="skill-panel">
+            <span>03</span>
+            <div><h3>Cloud & delivery</h3><p>AWS, Azure, Docker, CI/CD, S3, production debugging</p></div>
+          </div>
+          <div class="skill-panel">
+            <span>04</span>
+            <div><h3>Product engineering</h3><p>Multi-tenancy, payments, permissions, SaaS architecture</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section principles-section">
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>BUILD FOR FAILURE</span><b>✦</b><span>KEEP IT SIMPLE</span><b>✦</b><span>SHIP WITH CONTEXT</span><b>✦</b><span>MEASURE WHAT MATTERS</span><b>✦</b>
+          <span>BUILD FOR FAILURE</span><b>✦</b><span>KEEP IT SIMPLE</span><b>✦</b><span>SHIP WITH CONTEXT</span><b>✦</b><span>MEASURE WHAT MATTERS</span><b>✦</b>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="contact-card reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Have a backend problem worth solving?</h2>
+        <p>I’m open to backend engineering roles, product collaborations, and interesting technical conversations.</p>
+        <div class="contact-actions">
+          <a class="button button-primary" href="mailto:your-email@example.com">Email me</a>
+          <a class="button button-ghost" href="https://github.com/yourusername" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a class="button button-ghost" href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        </div>
+        <p class="contact-note">Replace the email, GitHub and LinkedIn links in <code>index.html</code> before publishing.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Ebube Chika</p>
+    <p>Built with HTML, CSS & JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
